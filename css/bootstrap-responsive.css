@@ -934,6 +934,48 @@
   .carousel-caption {
     position: static;
   }
+
+  .nav-tabs > li.active > a.sendthanks
+  {
+	  background: #fff url('../img/icon-edit.png') no-repeat center 10px; 
+	  display: inline-block;
+	  }
+
+	  .nav-tabs > li > a.sendthanks
+	  {
+		  background: url('../img/icon-edit.png') no-repeat center 10px;
+		  display: inline-block;
+		  }
+
+	.nav-tabs > li.active > a.timeline
+	{
+		background: #fff url('../img/icon-list.png') no-repeat center 10px; 
+		display: inline-block;
+	}
+
+	.nav-tabs > li > a.timeline
+	{
+		background: url('../img/icon-list.png') no-repeat center 10px;
+		display: inline-block;
+	}
+
+	#profiletabs.nav-tabs > li a
+	{
+		padding: 10px 20px;
+		min-width: 50px;
+	}
+
+	#profiletabs.nav-tabs > li
+	{
+		min-width: 33%;
+	}
+	
+	.nav-tabs > li > a.notifications
+	{
+		text-align: center;
+		
+	}
+
 }
 
 @media (max-width: 979px) {

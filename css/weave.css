@@ -1,0 +1,115 @@
+/*!
+ * Weave v1
+ *
+ */
+
+#signinsignuptab li
+{
+width: 50%;
+}
+
+     /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      .container {
+        width: auto;
+        max-width: 680px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+      
+      
+#timeline ul, #latestactivity ul
+{
+list-style-type: none;
+margin-left: 0;
+}
+
+#timeline ul li ul li, #latestactivity ul li ul li
+{
+display: inline;
+margin-right: 10px;
+}
+
+.hero-unit h1
+{
+font-size: 36px;
+}
+
+#timeline ul li.alert-neutral, #latestactivity ul li.alert-neutral
+{
+color: #545454;
+background-color: #f6f6f6;
+border-color: #ececec;
+}
+
+
+
+.nav-tabs > li.active > a.sendthanks
+{
+background: #fff url('../img/icon-edit.png') no-repeat 10px 5px; 
+padding-left: 40px;
+display: inline-block;
+}
+
+.nav-tabs > li > a.sendthanks
+{
+background: url('../img/icon-edit.png') no-repeat 10px 5px;
+padding-left: 40px;
+display: inline-block;
+}
+
+.nav-tabs > li.active > a.timeline
+{
+background: #fff url('../img/icon-list.png') no-repeat 10px 7px; 
+padding-left: 44px;
+display: inline-block;
+}
+
+.nav-tabs > li > a.timeline
+{
+background: url('../img/icon-list.png') no-repeat 10px 7px;
+padding-left: 44px;
+display: inline-block;
+}

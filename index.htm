@@ -9,11 +9,7 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
+    <link href="css/weave.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -24,28 +20,21 @@
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="img/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="img/ico/favicon.png">
+                                                         
+                                   
   </head>
 
   <body>
+  
+  <div id="wrap">
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">Weave / Thanks</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="#" data-toggle="collapse" data-target="#searchbox">Search</a></li>
-              <li><a href="#profile">Profile</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+          <a class="brand" href="index.htm">Weave</a>
         </div>
       </div>
     </div>
@@ -65,54 +54,32 @@
     
     <div class="container">
     
-          
-      <div class="hero-unit hidden-phone">
-	      <h1>Welcome to Weave/Thanks. </h1>
-	      
-	      <p>Sign in or sign up below!</p>
-	  </div>
-
-      <div class="row">
+    	<h1>Weave templates</h1>
+    	<p>Menu page for flat templates. Links will become active as templates are completed.</p>
+    	
+    	<ul>
+    	
+    		<li><a href="signin.htm">W01 Sign in / Sign up page</a></li>
+    		<li><a href="privacy-policy.htm">W02 Privacy policy interstitial page</a></li>
+    		<li><a href="sendthanks.htm">W3a-c Actions page</a><br/>
+    		<span class="muted">This page contains 3x tabs - send thanks, timeline, notifications</span></li>
+    		<li>W3d User profile</li>
+    		<li>W4 Account settings</li>
+    		<li>W6 Search results</li>
+    		<li>W7 Permalink</li>
+    	
+    	</ul>
       
-      	<div class="span6">
-      
-	      	<h2>Sign in</h2>
-	      	<form class="form-horizontal">
-		      	<div class="control-group">
-			      	<label class="control-label" for="inputEmail">Email</label>
-			      	<div class="controls">
-				      	<input type="text" id="inputEmail" placeholder="Email">
-				    </div>
-  </div>
-  <div class="control-group">
-    <label class="control-label" for="inputPassword">Password</label>
-    <div class="controls">
-      <input type="password" id="inputPassword" placeholder="Password">
-    </div>
-  </div>
-  <div class="control-group">
-    <div class="controls">
-      <label class="checkbox">
-        <input type="checkbox"> Remember me
-      </label>
-      <button type="submit" class="btn">Sign in</button>
-    </div>
-  </div>
-</form>
-      
-	    </div>
-      
-	    <div class="span6">
-      
-		    Sign up form goes here.
-      
-		</div>
-      
-      
-      </div>
-  
 
     </div> <!-- /container -->
+    
+        <div id="footer">
+      <div class="container">
+        <p class="muted credit">hello this is the footer</p>
+      </div>
+    </div>
+    
+  </div> <!-- /wrap -->
 
     <!-- Le javascript
     ================================================== -->
