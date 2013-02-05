@@ -936,9 +936,9 @@
     position: static;
   }
 
-  .nav-tabs > li.active > a.sendthanks
+  .nav-tabs > li.active > a.sendthanks, .nav-tabs > li > a.sendthanks:hover
   {
-	  background: #fff url('../img/icon-edit.png') no-repeat center 10px; 
+	  background: #efebe3 url('../img/icon-edit.png') no-repeat center 10px; 
 	  display: inline-block;
 	  }
 
@@ -948,9 +948,9 @@
 		  display: inline-block;
 		  }
 
-	.nav-tabs > li.active > a.timeline
+	.nav-tabs > li.active > a.timeline, .nav-tabs > li > a.timeline:hover
 	{
-		background: #fff url('../img/icon-list.png') no-repeat center 10px; 
+		background: #efebe3 url('../img/icon-list.png') no-repeat center 10px; 
 		display: inline-block;
 	}
 

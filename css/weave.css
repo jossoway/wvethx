@@ -1,15 +1,65 @@
 /*!
  * Weave v1
- *
+ * John Ossoway
  */
+ 
+ 
+/* Basic colors */
 
-#signinsignuptab li
+body
 {
-width: 50%;
+background: #e8e4d9 url('../img/background.jpg') repeat-x;
+color: #44352d;
+font-family: "prenton", sans-serif;
+font-size: 15px;
+}
+ 
+a, a:link
+{
+color: #A62121;
+text-decoration: none;
 }
 
-     /* Sticky footer styles
-      -------------------------------------------------- */
+a:hover, a:visited
+{
+color: #645454;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+transition: all 0.3s ease;
+text-decoration: none;
+}
+
+h1 , h2, h3
+{
+font-family: "freight-sans-pro",sans-serif;
+color: #44352d;
+text-shadow: #f9f8f5 -1px 1px 1px;
+}
+
+h1
+{
+font-size: 30px;
+}
+
+h2
+{
+font-size: 24px;
+}
+
+h3
+{
+font-size: 18px;
+}
+
+form legend
+{
+font-size: 18px;
+line-height: 24px;
+font-weight: 500;
+}
+ 
+
+/* Sticky footer styles */
 
       html,
       body {
@@ -32,7 +82,8 @@ width: 50%;
         height: 60px;
       }
       #footer {
-        background-color: #f5f5f5;
+        background-color: #ded8cc;
+        margin-top: 20px;
       }
 
       /* Lastly, apply responsive CSS fixes as necessary */
@@ -59,7 +110,14 @@ width: 50%;
         margin: 20px 0;
       }
       */
-      
+
+/* Tab UI styles */
+
+#signinsignuptab li
+{
+width: 50%;
+}
+ 
 #timeline ul, #latestactivity ul, #pinned ul, #received ul, #sent ul, #usertimeline ul
 {
 list-style-type: none;
@@ -72,28 +130,56 @@ display: inline;
 margin-right: 10px;
 }
 
+.hero-unit
+{
+background: #ded8cc;
+}
+
 .hero-unit h1
 {
 font-size: 36px;
 }
 
-.nav-tabs > li.active > a.sendthanks
+/* Navigation tabs */
+
+.nav-tabs > li 
 {
-background: #fff url('../img/icon-edit.png') no-repeat 10px 5px; 
+margin-bottom: -2px;
+}
+
+ul#profiletabs.nav
+{
+margin-bottom: 0px !important;
+}
+
+.nav-tabs > li a.notifications span.badge
+{
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.nav-tabs > li.active > a.notifications, .nav-tabs > li.active > a.notifications:hover
+{
+background: #efebe3; 
+display: inline-block;
+}
+
+.nav-tabs > li.active > a.sendthanks, .nav-tabs > li > a.sendthanks:hover
+{
+background: #efebe3 url('../img/icon-edit.png') no-repeat 10px 7px; 
 padding-left: 40px;
 display: inline-block;
 }
 
 .nav-tabs > li > a.sendthanks
 {
-background: url('../img/icon-edit.png') no-repeat 10px 5px;
+background: url('../img/icon-edit.png') no-repeat 10px 7px;
 padding-left: 40px;
 display: inline-block;
 }
 
-.nav-tabs > li.active > a.timeline
+.nav-tabs > li.active > a.timeline, .nav-tabs > li > a.timeline:hover
 {
-background: #fff url('../img/icon-list.png') no-repeat 10px 7px; 
+background: #efebe3 url('../img/icon-list.png') no-repeat 10px 7px; 
 padding-left: 44px;
 display: inline-block;
 }
@@ -202,7 +288,8 @@ border-bottom: dotted 1px #ececec;
 padding-bottom: 10px;
 }
 
-/* thanks sent/received/neutral */
+/* ALERT STYLES
+thanks sent/received/neutral */
 
 .alert {
   padding: 8px 35px 8px 14px;
@@ -298,4 +385,117 @@ padding: 0;
 #searchresults ul li
 {
 list-style-type: none;
+}
+
+/* Sign in / sign up desktop styles */
+
+ul#signinsignuptab.side-by-side
+{
+padding-bottom: 20px;
+padding: 0;
+margin-left: 5px;
+}
+
+ul#signinsignuptab.nav, ul#userprofiletabs.nav
+{
+margin-bottom: 0 !important;
+}
+
+ul#signinsignuptab.nav li.active a, ul#userprofiletabs.nav li.active a
+{
+background: #efebe3;
+}
+
+ul#signinsignuptab.nav.nav-tabs > li > a 
+{
+margin-right: 0px;
+}
+
+#signinsignuptab.side-by-side li h4
+{
+font-size: 24px;
+}
+
+#signinsignuptab.side-by-side li {
+text-align: left;
+float: left;
+list-style-type: none;
+padding-bottom: 5px;
+}
+
+#signin.side-by-side {
+float: left;
+width: 46%;
+border-right: solid 1px #ccc;
+margin-right: 25px;
+padding-right: 20px;
+padding-left: 20px;
+}
+
+#signup.side-by-side
+{
+padding-left: 0px;
+float: left;
+width: 40%;
+}
+
+#tabcontent
+{
+background: #efebe3;
+padding: 10px;
+border-right: 1px solid #ddd;
+border-left: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+}
+
+#tabcontent .span6
+{
+width: 440px;
+}
+
+.side-by-side form input[type="text"], .side-by-side form input[type="password"], .side-by-side form textarea
+{
+width: 80%;
+}
+
+
+/* Autocomplete styles */
+
+span.ui-helper-hidden-accessible
+{
+display: none;
+}
+
+.ui-autocomplete
+{
+width: 260px !important;
+}
+
+.ui-autocomplete li.ui-menu-item
+{
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+.ui-autocomplete li.ui-menu-item a
+{
+display: block;
+list-style-type: none;
+padding: 5px 7px;
+margin-bottom: 2px;
+background: #f6f6f6;
+color: #A62121;
+border-bottom: dotted 1px #999;
+}
+
+.ui-autocomplete li.ui-menu-item a:hover, .ui-autocomplete li:hover
+{
+background: #f6f6f6;
+color: #A62121;
+}
+
+.navbar.navbar-static-top
+{
+margin-bottom: 20px;
 }
