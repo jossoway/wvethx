@@ -8,7 +8,7 @@
 
 body
 {
-background: #e8e4d9 url('../img/background.jpg') repeat-x;
+background: #e8e4d9;
 color: #44352d;
 font-family: "prenton", sans-serif;
 font-size: 15px;
@@ -22,7 +22,7 @@ text-decoration: none;
 
 a:hover, a:visited
 {
-color: #645454;
+color: #9f3a04;
 -webkit-transition: all 0.3s ease;
 -moz-transition: all 0.3s ease;
 transition: all 0.3s ease;
@@ -159,13 +159,13 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 .nav-tabs > li.active > a.notifications, .nav-tabs > li.active > a.notifications:hover
 {
-background: #efebe3; 
+background: #f5f0e7; 
 display: inline-block;
 }
 
 .nav-tabs > li.active > a.sendthanks, .nav-tabs > li > a.sendthanks:hover
 {
-background: #efebe3 url('../img/icon-edit.png') no-repeat 10px 7px; 
+background: #f5f0e7 url('../img/icon-edit.png') no-repeat 10px 7px; 
 padding-left: 40px;
 display: inline-block;
 }
@@ -179,7 +179,7 @@ display: inline-block;
 
 .nav-tabs > li.active > a.timeline, .nav-tabs > li > a.timeline:hover
 {
-background: #efebe3 url('../img/icon-list.png') no-repeat 10px 7px; 
+background: #f5f0e7 url('../img/icon-list.png') no-repeat 10px 7px; 
 padding-left: 44px;
 display: inline-block;
 }
@@ -289,10 +289,17 @@ padding-bottom: 10px;
 }
 
 /* ALERT STYLES
-thanks sent/received/neutral */
+thanks sent/received/neutral 
+
+No interaction: grey
+Sent: Green
+Received: Blue
+Error: Red
+
+*/
 
 .alert {
-  padding: 8px 35px 8px 14px;
+  padding: 8px 8px 8px 14px;
   margin-bottom: 20px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: #fcf8e3;
@@ -320,7 +327,7 @@ thanks sent/received/neutral */
 
 .alert-sent {
   color: #468847;
-  background-color: #dff0d8;
+  background-color: #e2f0d2;
   border-color: #d6e9c6;
 }
 
@@ -363,6 +370,7 @@ thanks sent/received/neutral */
 .alert-block {
   padding-top: 14px;
   padding-bottom: 14px;
+  padding-right: 10px;
 }
 
 .alert-block > p,
@@ -373,6 +381,35 @@ thanks sent/received/neutral */
 .alert-block p + p {
   margin-top: 5px;
 }
+
+.alert .alert-status-toggle
+{
+float: right;
+font-size: 10px;
+}
+
+.alert .alert-status-toggle img
+{
+padding-left: 10px;
+display: block;
+}
+
+.alert .alert-status-toggle a:hover img
+{
+opacity: 0.8;
+-webkit-transition: all 0.3s ease;
+}
+
+.alert.alert-blocked, .alert.alert-blocked a
+{
+color: #ccc;
+}
+
+.alert.alert-blocked [class^="icon-"], .alert.alert-blocked [class*=" icon-"]
+{
+background-image: url("../img/glyphicons-halflings-grey.png");
+}
+
 
 /* search results */
 
@@ -403,7 +440,7 @@ margin-bottom: 0 !important;
 
 ul#signinsignuptab.nav li.active a, ul#userprofiletabs.nav li.active a
 {
-background: #efebe3;
+background: #f5f0e7;
 }
 
 ul#signinsignuptab.nav.nav-tabs > li > a 
@@ -441,7 +478,7 @@ width: 40%;
 
 #tabcontent
 {
-background: #efebe3;
+background: #f5f0e7;
 padding: 10px;
 border-right: 1px solid #ddd;
 border-left: 1px solid #ddd;
