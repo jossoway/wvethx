@@ -388,13 +388,23 @@ float: right;
 font-size: 10px;
 }
 
-.alert .alert-status-toggle img
+.alert.alert-blocked .alert-status-toggle a
 {
-padding-left: 10px;
 display: block;
+width: 50px;
+background: url('../img/icon-blocked.png') no-repeat 10px 0;
+padding-top: 28px;
 }
 
-.alert .alert-status-toggle a:hover img
+.alert.alert-private .alert-status-toggle a
+{
+display: block;
+width: 50px;
+background: url('../img/icon-locked.png') no-repeat 10px 0;
+padding-top: 28px;
+}
+
+.alert .alert-status-toggle a:hover
 {
 opacity: 0.8;
 -webkit-transition: all 0.3s ease;
@@ -409,6 +419,8 @@ color: #ccc;
 {
 background-image: url("../img/glyphicons-halflings-grey.png");
 }
+
+
 
 
 /* search results */
