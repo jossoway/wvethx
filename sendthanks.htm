@@ -34,7 +34,7 @@
     <div class="navbar navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="index.htm">Weave</a>
+          <a class="brand" href="index.htm">Thnku</a>
           <div class="">
             <ul class="nav">
               <li class="searchbox"><a href="#" data-toggle="collapse" data-target="#searchbox" class="btn-small"><span class="hidden-phone">Search&nbsp;</span> <i class="icon-search icon-white"></i></a></li>
@@ -80,22 +80,71 @@
 			      		<input type="text" placeholder="Type something…" class="input-block-level">
 			      	</div>
 			      	
-			      	<div>
-			      		<label>Category</label>
-			      		<select>
-				      		<option>1</option>
-				      		<option>2</option>
-				      		<option>3</option>
-				      		<option>4</option>
-				      		<option>5</option>
-				      	</select>
-			      	</div>
+			      	<div class="categories accordion" id="categories-accordion">
+			      	
+			      		<div class="">
+				      		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+					      		Categories <i class="icon-chevron-down"></i>
+					      	</a>
+					    </div>
+					    
+					    <div id="collapseOne" class="accordion-body collapse">
+						    <div class="accordion-inner">
+					    
+							    <label for="inspiration" class="checkbox">
+								    <input type="checkbox" value="1" name="categories[]" id="inspiration">
+								    Inspiration
+								</label>
+					    
+								<label for="advice" class="checkbox">
+									<input type="checkbox" value="2" id="advice" name="categories[]">
+									Advice
+								</label>
+					    
+								<label for="funding-money" class="checkbox">
+									<input type="checkbox" value="3" id="funding-money" name="categories[]">
+									Inspiration
+								</label>
+					    
+								<label for="in-kind-support" class="checkbox">
+									<input type="checkbox" value="4" id="in-kind-support" name="categories[]">
+									In-kind support
+								</label>
+					    
+								<label for="an-introduction" class="checkbox">
+									<input type="checkbox" value="5" id="an-introduction" name="categories[]">
+									An introduction
+								</label>
+					    
+								<label for="volunteering" class="checkbox">
+									<input type="checkbox" value="6" id="volunteering" name="categories[]">
+									Volunteering
+								</label>
+					    
+								<label for="promotion" class="checkbox">
+									<input type="checkbox" value="7" id="promotion" name="categories[]">
+									Promotion
+								</label>
+					    
+								<label for="meeting" class="checkbox">
+									<input type="checkbox" value="8" id="meeting" name="categories[]">
+									Meeting
+								</label>
+					    
+								<label for="good-service" class="checkbox">
+									<input type="checkbox" value="9" id="good service" name="categories[]">
+									Good service
+					     	 	</label>
+						    </div>
+					    </div>
+					</div>
 			      	
 			      	<div>
-				      	<textarea rows="5" class="input-block-level"></textarea>
+			      	 	<label for="thankyou">What do you want to say?</label>
+				      	<textarea name="thankyou" rows="5" class="input-block-level"></textarea>
 			      	</div>
 
-				   <button type="submit" class="btn btn-primary">Send thanks</button>
+				   <button type="submit" class="btn btn-success">Send thanks</button>
 			</fieldset>
 		  </form>
       	          
@@ -137,25 +186,67 @@
 	      
 	      <div id="notifications" class="tab-pane fade">
 		      
-		      <div class="alert alert-received">
-		      	<button type="button" class="close" data-dismiss="alert">&times;</button>
-			    <a href="">user1</a> thanked <a href="">user2</a> for <a href="">category 1</a> and <a href="">category 2</a> their part in the <a href="">Example Project</a>.
-			  </div>
-			  
-			  <div class="alert alert-received">
-		      	<button type="button" class="close" data-dismiss="alert">&times;</button>
-			    <a href="">user1</a> thanked <a href="">user2</a> for <a href="">category 1</a> and <a href="">category 2</a> their part in the <a href="">Example Project</a>.
-			  </div>
-			  
-			  <div class="alert alert-received">
-		      	<button type="button" class="close" data-dismiss="alert">&times;</button>
-			    <a href="">user1</a> thanked <a href="">user2</a> for <a href="">category 1</a> and <a href="">category 2</a> their part in the <a href="">Example Project</a>.
-			  </div>
-			  
-			  <div class="alert alert-received">
-		      	<button type="button" class="close" data-dismiss="alert">&times;</button>
-			    <a href="">user1</a> thanked <a href="">user2</a> for <a href="">category 1</a> and <a href="">category 2</a> their part in the <a href="">Example Project</a>.
-			  </div>
+		      <ul>  	
+	      		<li class="alert alert-received public alert-private not-blocked alert-not-blocked">
+	      	
+	      			<div class="alert-status-toggle"><a href="">Link here</a></div>
+  
+	      			<a href="/profile/2">Flob A Lob</a> thanked
+	      			<a href="/profile/1">Justin Hellings</a> for
+	      			<span>ejkghiejb</span>
+  
+  
+
+	      			<div class="actions">
+			      	<ul>
+				      	<li><a class="btn-mini" href="">Share this <i class="icon-share-alt icon"></i></a></li>
+				      	<li><a href="/thankyou/6" class="btn-mini">Permalink <i class="icon-bookmark icon"></i>13:57 Thursday 31 January 2013</a></li>
+				      	<li><a href="" class="btn-mini">Pin this<i class="icon-star icon"></i></a></li>
+				    </ul>
+				    </div>
+			    </li>
+			    
+			    <li class="alert alert-neutral public alert-public blocked alert-blocked">
+			    
+			    	<div class="alert-status-toggle"><a href="">Link here</a></div>
+  
+			    	<a href="/profile/2">Flob A Lob</a> thanked
+			    	<a href="/profile/1">Justin Hellings</a> for
+			    	<span>ejkghiejb</span>
+  
+  
+
+			    	<div class="actions">
+			      	<ul>
+				      	<li><a class="btn-mini" href="">Share this <i class="icon-share-alt icon"></i></a></li>
+				      	<li><a href="/thankyou/6" class="btn-mini">Permalink <i class="icon-bookmark icon"></i>13:57 Thursday 31 January 2013</a></li>
+				      	<li><a href="" class="btn-mini">Pin this<i class="icon-star icon"></i></a></li>
+				    </ul>
+				    </div>
+				</li>
+				
+			    <li class="alert alert-neutral public alert-public not-blocked alert-not-blocked">
+			    
+			    	<div class="alert-status-toggle"><a href="">Link here</a></div>
+  
+			    	<a href="/profile/2">Flob A Lob</a> thanked
+			    	<a href="/profile/1">Justin Hellings</a> for
+			    	<span>ejkghiejb</span>
+  
+  
+
+			    	<div class="actions">
+			      	<ul>
+				      	<li><a class="btn-mini" href="">Share this <i class="icon-share-alt icon"></i></a></li>
+				      	<li><a href="/thankyou/6" class="btn-mini">Permalink <i class="icon-bookmark icon"></i>13:57 Thursday 31 January 2013</a></li>
+				      	<li><a href="" class="btn-mini">Pin this<i class="icon-star icon"></i></a></li>
+				    </ul>
+				    </div>
+				</li>
+
+
+      	
+      	</ul>
       	    
       	    
 	      </div>
