@@ -1132,4 +1132,9 @@
     height: auto !important;
     overflow: visible !important;
   }
+  
+  #tabcontent .span6
+  {
+	  width: 440px;
+	  }
 }

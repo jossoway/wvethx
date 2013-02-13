@@ -29,15 +29,6 @@ transition: all 0.3s ease;
 text-decoration: none;
 }
 
-a:visited
-{
-color: #9f3a04;
--webkit-transition: all 0.3s ease;
--moz-transition: all 0.3s ease;
-transition: all 0.3s ease;
-text-decoration: none;
-}
-
 h1 , h2, h3
 {
 font-family: "freight-sans-pro",sans-serif;
@@ -91,8 +82,9 @@ font-weight: 500;
         height: 60px;
       }
       #footer {
-        background-color: #ded8cc;
+        background-color: #525252;
         margin-top: 20px;
+        padding: 20px 0;
       }
 
       /* Lastly, apply responsive CSS fixes as necessary */
@@ -102,6 +94,7 @@ font-weight: 500;
           margin-right: -20px;
           padding-left: 20px;
           padding-right: 20px;
+          
         }
       }
 
@@ -182,7 +175,7 @@ font-size: 36px;
 
 .nav-tabs > li 
 {
-margin-bottom: -1px;
+margin-bottom: -2px;
 }
 
 .nav-tabs > li > a:hover {
@@ -499,12 +492,12 @@ padding: 0;
 margin-left: 5px;
 }
 
-ul#signinsignuptab.nav, ul#userprofiletabs.nav
+ul#signinsignuptab.nav, ul#userprofiletabs.nav, ul#settingstabs.nav
 {
 margin-bottom: 0 !important;
 }
 
-ul#signinsignuptab.nav li.active a, ul#userprofiletabs.nav li.active a
+ul#signinsignuptab.nav li.active a, ul#userprofiletabs.nav li.active a, ul#settingstabs.nav li.active a
 {
 background: #f5f0e7;
 }
@@ -556,11 +549,6 @@ border-bottom: 1px solid #dad7c1;
 border-top: 1px solid #dad7c1;
 border-left: 1px solid #dad7c1;
 border-right: 1px solid #dad7c1;
-}
-
-#tabcontent .span6
-{
-width: 440px;
 }
 
 .side-by-side form input[type="text"], .side-by-side form input[type="password"], .side-by-side form textarea
