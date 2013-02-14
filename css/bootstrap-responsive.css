@@ -976,7 +976,13 @@
 		text-align: center;
 		
 	}
-
+	
+	#timeline ul li ul li, #latestactivity ul li ul li, #pinned ul li ul li, #received ul li ul li, #sent ul li ul li, #usertimeline ul li ul li, #searchresults ul li ul li, #notifications ul li ul li, #permalink ul li ul li {
+		display: block;
+		margin-right: 10px;
+		border-bottom: dotted 1px #ccc;
+		padding: 5px 0;
+		}
 }
 
 @media (max-width: 979px) {
@@ -1137,4 +1143,18 @@
   {
 	  width: 440px;
 	  }
+}
+
+@media (max-width: 320px) {
+
+#profiletabs.nav-tabs > li
+	{
+		min-width: 30%;
+	}
+
+	#profiletabs.nav-tabs > li a {
+		padding: 10px 18px;
+		min-width: 45px;
+	}
+
 }
