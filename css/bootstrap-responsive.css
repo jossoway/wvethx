@@ -983,6 +983,19 @@
 		border-bottom: dotted 1px #ccc;
 		padding: 5px 0;
 		}
+		
+		#tabcontent .alert .alert-meta ul
+		{
+			width: 100%;
+			
+		}
+		
+		#tabcontent .alert .alert-meta ul li
+		{
+			display: block;
+			
+		}
+		
 }
 
 @media (max-width: 979px) {
