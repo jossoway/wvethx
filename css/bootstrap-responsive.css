@@ -996,6 +996,21 @@
 			
 		}
 		
+		.alert-status-controls	
+		{
+			float: right;
+			background: #f6f6f6;
+			padding: 5px;
+			border: dotted 1px #ccc;	
+		}
+		
+		.alert-status-controls .alert-status-toggle
+		{
+			float: none;
+		}
+		
+		
+		
 }
 
 @media (max-width: 979px) {
