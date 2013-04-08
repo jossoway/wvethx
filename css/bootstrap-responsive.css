@@ -1171,6 +1171,11 @@
   {
 	  width: 440px;
 	  }
+	  
+  	  #send .control-label
+{
+width: 70px;
+}
 }
 
 @media (max-width: 320px) {
