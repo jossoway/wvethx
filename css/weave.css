@@ -11,7 +11,7 @@
 body
 {
 background: #e8e4d9;
-color: #44352d;
+color: #545454;
 font-family: "prenton", sans-serif;
 font-size: 15px;
 }
@@ -34,8 +34,7 @@ text-decoration: none;
 h1 , h2, h3
 {
 font-family: "freight-sans-pro",sans-serif;
-color: #44352d;
-text-shadow: #f9f8f5 -1px 1px 1px;
+/* text-shadow: #f9f8f5 -1px 1px 1px; */
 }
 
 h1
@@ -87,6 +86,21 @@ font-weight: 500;
         background-color: #525252;
         margin-top: 20px;
         padding: 20px 0;
+      }
+      
+      #footer a {
+	      color: #fff;
+      }
+      
+      #footer a:hover {
+	      color: #999;
+	      text-decoration: underline;
+      }
+      
+      #footer ul li {
+	      list-style-type: none;
+	      display: inline;
+	      margin-right: 15px;
       }
 
       /* Lastly, apply responsive CSS fixes as necessary */
@@ -151,13 +165,13 @@ margin-top: 1px;
 width: 50%;
 }
  
-#timeline ul, #latestactivity ul, #pinned ul, #received ul, #sent ul, #usertimeline ul, #notifications ul, #permalink ul
+#timeline ul, #latestactivity ul, #pinned ul, #received ul, #sent ul, #usertimeline ul, #notifications ul, #permalink ul, #searchresults ul, #categoryresults ul
 {
 list-style-type: none;
 margin-left: 0;
 }
 
-#timeline ul li ul li, #latestactivity ul li ul li, #pinned ul li ul li, #received ul li ul li, #sent ul li ul li, #usertimeline ul li ul li, #searchresults ul li ul li, #notifications ul li ul li, #permalink ul li ul li
+#timeline ul li ul li, #latestactivity ul li ul li, #pinned ul li ul li, #received ul li ul li, #sent ul li ul li, #usertimeline ul li ul li, #searchresults ul li ul li, #notifications ul li ul li, #permalink ul li ul li, #categoryresults ul li ul li
 {
 display: inline;
 margin-right: 10px;
@@ -364,14 +378,6 @@ Error: Red
           border-radius: 4px;
 }
 
-#tabcontent .alert.alert-new
-{
-background-image: url('../img/icon-sticker-orange.png');
-background-position: top left;
-background-repeat: no-repeat;
-  padding: 8px 8px 8px 26px;
-}
-
 #tabcontent .alert {
   padding: 8px 8px 8px 14px;
 }
@@ -488,11 +494,6 @@ margin-top: 0px;
 margin-left: 5px;
 }
 
-.alert .actions
-{
-clear: left;
-}
-
 .alert .actions .btn-mini 
 {
 padding: 0 6px 0 0;
@@ -503,25 +504,6 @@ padding: 0 6px 0 0;
 margin-right: 5px;		
 }
 
-#tabcontent .alert .alert-meta ul
-{
-width: 50%;
-font-size: 10px;
-border-top: dotted 1px #ccc;
-padding-top: 5px;
-margin: 5px 0;
-}
-
-#tabcontent .alert .alert-meta ul li
-{
-list-style-type: none;
-float: left;
-}
-
-.alert .alert-meta [class^="icon-"], .alert .alert-meta [class*=" icon-"] {
-margin-top: -2px;
-margin-left: 3px;
-}
 
 /* search results */
 
@@ -661,6 +643,7 @@ height: auto;
 .categories
 {
 margin-bottom: 20px;
+margin-left: 100px;
 }
 
 .categories label
@@ -682,4 +665,121 @@ background-color: #fcf8e3;
 margin-right: 10px;
 }
 
+/* front page */
+
+body.front h1, h2, h3 {
+	font-family: "freight-sans-pro", sans-serif;
+	font-style: normal;
+	font-weight: 900;	
+}
+
+body.front h2 {
+	line-height: 24px;
+}
+
+body.front h3 {
+	line-height: 18px;
+	margin-bottom: 20px;
+}
+
+.front #what-is-weave h3 {
+	background: url('../img/arrow-handdrawn-1.png') no-repeat center right;
+	display: inline-block;
+	padding-right: 75px;
+	line-height: 30px;
+}
+
+body.front #wrap {
+	background: #e8e4d9 url('../img/front-bg.jpg') repeat-x bottom left;
+}
+
+.front .intro {
+	margin-bottom: 20px;
+}
+
+.front #thnku-intro, .front #what-is-weave, .front #front-timeline  {
+	background: #e8e4d9;
+	padding: 20px;
+	border-bottom: 2px solid #999;
+}
+
+.front .intro h1 {
+	margin-top: 0;
+	font-size: 50px;
+}
+
+.front .intro h1 span {
+	display: block;
+}
+
+.front .intro p {
+	font-size: 18px;
+	line-height: 24px;
+	font-family: "freight-sans-pro", sans-serif;
+	font-style: normal;
+	font-weight: 600;	
+}
+
+a.signin-signup-box {
+	display: block;
+	background: url('../img/big-blue-arrow-right.png') no-repeat center right;
+	padding-left: 30px;
+	margin-bottom: 10px;
+	color: #fff;
+	font-weight: bold;
+	min-height: 98px;
+}
+
+a.signin-signup-box:hover {
+	text-decoration: underline;
+	opacity: 0.9;
+}
+
+.signin-signup-text {
+	background: url('../img/twitter-bird-white.png') no-repeat center left;
+	padding: 40px 0px 40px 58px;
+}
+
+
+#what-is-weave img {
+	float: right;
+	padding: 2px;
+	border: solid 1px #ccc;
+	margin: 0 0 10px 10px;
+}
+
+#what-is-weave .quote {
+	background: url('../img/quote.png') no-repeat 0px 0px;
+}
+
+#what-is-weave .quote p:first-child {
+	padding-left: 50px;
+}
+
+#what-is-weave ul.connect {
+	margin: 15px 0;
+}
+
+#what-is-weave .connect li {
+	list-style-type: none;
+	padding: 5px 0 5px 30px;
+	border-bottom: dotted 1px #ccc;
+	margin-bottom: 5px;
+}
+
+#what-is-weave .connect li.connect-twitter {
+	background: url('../img/icon-social-twitter.png') no-repeat 0px 6px;
+}
+
+#what-is-weave .connect li.connect-profile {
+	background: url('../img/icon-social-profile.png') no-repeat 0px 6px;
+}
+
+/* Video resizing */
+
+/* Scaling fixes for videos in iFrames e.g. Vimeo/Youtube content */
+
+.videobox {
+	margin-bottom: 20px;
+}
 
