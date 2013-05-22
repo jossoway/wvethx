@@ -12,7 +12,9 @@ body
 {
 background: #e8e4d9;
 color: #545454;
-font-family: "prenton", sans-serif;
+font-family: "prenton-n4", "prenton", sans-serif;
+font-weight: 400;
+font-style: normal;
 font-size: 15px;
 }
  
@@ -146,8 +148,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff525252', en
 
 .navbar-inverse .brand
 {
-font-family: "freight-sans-pro",sans-serif;
-font-weight: bold;
+font-family: "freight-sans-pro-n9", "freight-sans-pro",sans-serif;
+font-weight: 900;
+font-style: normal;
 font-size: 26px;
 color: #fbf8e3;
 } 
@@ -668,7 +671,7 @@ margin-right: 10px;
 /* front page */
 
 body.front h1, h2, h3 {
-	font-family: "freight-sans-pro", sans-serif;
+	font-family: "freight-sans-pro-n9", "freight-sans-pro", sans-serif;
 	font-style: normal;
 	font-weight: 900;	
 }
@@ -715,7 +718,7 @@ body.front #wrap {
 .front .intro p {
 	font-size: 18px;
 	line-height: 24px;
-	font-family: "freight-sans-pro", sans-serif;
+	font-family: "freight-sans-pro-n6", "freight-sans-pro", sans-serif;
 	font-style: normal;
 	font-weight: 600;	
 }
