@@ -41,7 +41,7 @@
       <div class="navbar-inner">
         <div class="container">
 
-          <a class="brand" href="index.htm">Thnku</a>
+          <a class="brand" href="index.htm">Thnku. <span>The place for thanks.</span></a>
           <div class="pull-right">
             <ul class="nav">
               <li class="searchbox"><a href="#" data-toggle="collapse" data-target="#searchbox" class="btn-small"><span class="hidden-phone">Search&nbsp;</span> <i class="icon-search icon-white"></i></a></li>
@@ -346,11 +346,15 @@
     
     <div id="footer">
       <div class="container">
-      	<ul>
-      		<li class="muted"><a href="">Thnku uses cookies</a></li>
-      		<li class="muted"><a href="">Accessibility</a></li>
-      		<li class="muted"><a href="">About Thnku</a></li>
-      	</ul>
+      <div class="row">
+      	<div class="span4">
+      		<ul>
+      			<li class="muted"><a href="">Thnku uses cookies</a></li>
+	  			<li class="muted"><a href="">Accessibility</a></li>
+	  			<li class="muted"><a href="">About Thnku</a></li>
+	  		</ul>
+      	</div>
+      </div>
       </div>
     </div>
     
@@ -361,7 +365,13 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
-     <script src="js/video.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Target your .container, .wrapper, .post, etc.
+			$(".videobox").fitVids();
+			});
+	</script>
     
     <script src="js/home-page-tabs.js"></script>
 

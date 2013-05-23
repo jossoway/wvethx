@@ -785,6 +785,29 @@
   .uneditable-input.span1 {
     width: 28px;
   }
+  
+  .front #what-is-weave h3 {
+  	  background: url('../img/arrow-handdrawn-1.png') no-repeat 220px 0px;
+	  line-height: 20px;
+	  }
+	
+  .front #what-is-weave #watch-a-film h3 {
+	  background: url('../img/arrow-handdrawn-1.png') no-repeat 170px 0px;
+	  }  
+	 
+
+  #what-is-weave img {
+	  max-width: 50%;
+	  }
+  
+  #what-is-weave .quote {
+	  background: none;
+	  }
+	  
+  #what-is-weave .quote p:first-child {
+	  padding-left: 0px;
+	  }
+  
 }
 
 @media (max-width: 767px) {
@@ -883,6 +906,39 @@
   .modal.fade.in {
     top: 20px;
   }
+  
+  .front #thnku-intro {
+	  margin-bottom: 20px;
+  }
+  
+  a.signin-signup-box {
+	  background: #33ccff;
+	  font-size: 20px;
+	  }
+	  
+  .front #what-is-weave h3 {
+	  background: none;
+	  display: inline-block;
+	  padding-right: 0px;
+	  line-height: 24px;
+	  }
+  
+  .front #what-is-weave img {
+	  float: none;
+	  display: block;
+	  padding: 2px;
+	  border: solid 1px #ccc;
+	  margin: 0 0 10px 0;
+	  }
+	  
+  #what-is-weave .quote {
+	  background: none;
+	  }
+	  
+  #what-is-weave .quote p:first-child {
+	  padding-left: 0px;
+	  }
+  
 }
 
 @media (max-width: 480px) {
