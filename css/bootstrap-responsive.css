@@ -1058,6 +1058,10 @@
 		{
 			float: none;
 		}
+		
+		.pull-right {
+			float: none;
+			}
 }
 
 @media (max-width: 979px) {
