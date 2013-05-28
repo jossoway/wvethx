@@ -911,8 +911,13 @@
 	  margin-bottom: 20px;
   }
   
-  a.signin-signup-box {
+  a.signin-signup-box.twitter-signup {
 	  background: #33ccff;
+	  font-size: 20px;
+	  }
+	 
+  a.signin-signup-box.twitter-signin {
+	  background: #62c462;
 	  font-size: 20px;
 	  }
 	  
