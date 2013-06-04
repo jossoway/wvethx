@@ -393,6 +393,12 @@ Error: Red
           border-radius: 4px;
 }
 
+.alert-sent, .alert-received, .alert-neutral, .alert-blocked {
+	font-size: 12px;
+	line-height: 14px;
+	color: #545454;
+}
+
 #tabcontent .alert {
   padding: 8px 8px 8px 14px;
 }
@@ -410,8 +416,8 @@ Error: Red
 
 .alert-sent {
   color: #468847;
-  background-color: #e2f0d2;
-  border-color: #d6e9c6;
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
 }
 
 .alert-sent h4 {
@@ -442,7 +448,7 @@ Error: Red
 
 .alert-neutral {
 	color: #545454;
-	background-color: #f6f6f6;
+	background-color: #fafafa;
 	border-color: #ececec;
 }
 
@@ -465,33 +471,11 @@ Error: Red
   margin-top: 5px;
 }
 
-.alert .alert-status-toggle
+.alert.alert-blocked
 {
-float: right;
-font-size: 10px;
-margin-left: 10px;
-}
-
-.alert .alert-status-toggle.lock a 
-{
-display: block;
-width: 60px;
-background: url('../img/icon-locked.png') no-repeat 12px 0;
-padding-top: 28px;
-}
-
-.alert .alert-status-toggle.block a 
-{
-display: block;
-width: 60px;
-background: url('../img/icon-blocked.png') no-repeat 12px 0;
-padding-top: 28px;
-}
-
-.alert .alert-status-toggle a:hover
-{
-opacity: 0.8;
--webkit-transition: all 0.3s ease;
+background: #f6f6f6;
+border: solid 1px #ececec;
+color: #ccc;
 }
 
 .alert.alert-blocked, .alert.alert-blocked a
@@ -501,22 +485,31 @@ color: #ccc;
 
 .alert.alert-blocked [class^="icon-"], .alert.alert-blocked [class*=" icon-"]
 {
-background-image: url("../img/glyphicons-halflings-grey.png");
+	background-image: url("../img/glyphicons-halflings-grey.png");
+}
+
+.alert.alert-blocked .icon-ban-circle {
+	background-image: url("../img/glyphicons-halflings-highlight.png");	
 }
 
 .alert .actions .btn-mini [class^="icon-"], .alert .actions .btn-mini [class*=" icon-"] {
 margin-top: 0px;
-margin-left: 5px;
+margin-left: 0px;
 }
 
 .alert .actions .btn-mini 
 {
-padding: 0 6px 0 0;
+padding: 0;
 }
 		
 .actions li
 {
-margin-right: 5px;		
+margin-right: 0px;		
+}
+
+.actions li a {
+	text-wrap: none;
+	white-space:nowrap;
 }
 
 
@@ -763,7 +756,13 @@ a.signin-signup-box:hover {
 }
 
 
-
+.welcome-message p {
+	padding: 5px 10px;
+	font-weight: bold;
+	width: 70%;
+	padding-right: 80px;
+	background: url('../img/arrow-handdrawn-2.png') no-repeat bottom right;
+}
 
 
 #what-is-weave img {
@@ -807,4 +806,6 @@ a.signin-signup-box:hover {
 .videobox {
 	margin-bottom: 20px;
 }
+
+
 
