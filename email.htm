@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">    <!-- So that mobile webkit will display zoomed in -->
+    <meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
+
+    <title>Thnku- responsive Email Layout</title>
+    <style type="text/css">
+
+        /* Resets: see reset.css for details */
+        .ReadMsgBody { width: 100%; background-color: #ebebeb;}
+        .ExternalClass {width: 100%; background-color: #ebebeb;}
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+        body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+        body {margin:0; padding:0;}
+        table {border-spacing:0;}
+        table td {border-collapse:collapse;}
+        .yshortcuts a {border-bottom: none !important;}
+
+
+        /* Constrain email width for small screens */
+        @media screen and (max-width: 600px) {
+            table[class="container"] {
+                width: 95% !important;
+            }
+        }
+
+        /* Give content more room on mobile */
+        @media screen and (max-width: 480px) {
+            td[class="container-padding"] {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+        }
+
+
+        /* Styles for forcing columns to rows */
+        @media only screen and (max-width : 600px) {
+
+            /* force container columns to (horizontal) blocks */
+            td[class="force-col"] {
+                display: block;
+                padding-right: 0 !important;
+            }
+            table[class="col-3"] {
+                /* unset table align="left/right" */
+                float: none !important;
+                width: 100% !important;
+
+                /* change left/right padding and margins to top/bottom ones */
+                margin-bottom: 12px;
+                padding-bottom: 12px;
+                border-bottom: 1px solid #eee;
+            }
+
+            /* remove bottom border for last column/row */
+            table[id="last-col-3"] {
+                border-bottom: none !important;
+                margin-bottom: 0;
+            }
+
+            /* align images right and shrink them a bit */
+            img[class="col-3-img"] {
+                float: right;
+                margin-left: 6px;
+                max-width: 130px;
+            }
+        }
+
+    </style>
+</head>
+<body style="margin:0; padding:10px 0;" bgcolor="#ebebeb" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<br>
+
+<!-- 100% wrapper (grey background) -->
+<table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#ebebeb">
+  <tr>
+    <td align="center" valign="top" bgcolor="#ebebeb" style="background-color: #ebebeb;">
+
+      <!-- 600px container (white background) -->
+      <table border="0" width="600" cellpadding="0" cellspacing="0" class="container" bgcolor="#ffffff">
+      <tr>
+      	<td bgcolor="#525252" style="background: #525252; padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom:15px;"><img src="http://www.ragingtrifle.com/images/email-header.png"/></td>
+      </tr>
+      
+      
+        <tr>
+          <td class="container-padding" bgcolor="#e8e4d9" style="background-color: #e8e4d9; padding-left: 30px; padding-right: 30px; font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif; color: #333;" align="left">
+            <br>
+
+            <!-- ### BEGIN CONTENT ### -->
+
+            <div style="font-weight: bold; font-size: 30px; line-height: 30px; color: #525252;">
+            This is the big email title
+            </div>
+            
+            <br>
+            You should view the source code to see how this works. If you're struggling, here's a bit more documentation
+            <br><br>
+
+            <table border="0" cellpadding="0" cellspacing="0" class="columns-container">
+              <tr>
+                <td class="force-col" style="padding-right: 20px;" valign="top">
+
+                    <!-- ### COLUMN 1 ### -->
+                    <table border="0" cellspacing="0" cellpadding="0" width="175" align="left" class="col-3">
+                    <tr>
+                        <td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+                            <img src="http://www.ragingtrifle.com/images/email-leia.jpg" alt="Image Caption" border="0" hspace="0" vspace="0" style="vertical-align:top; margin-bottom:12px;padding:2px; border: solid 1px #ccc;" class="col-3-img">
+                            <a href="#" style="color:#0088cc; font-weight:bold;">Princess Leia</a><br>
+                            The Nellie, a cruising yawl, swung to her anchor without a flutter of the sails, and was at rest. The flood had made, the wind was nearly calm, and being bound down the river, the only thing for it was to come to and wait for the turn of the tide.
+                            <br>
+                        </td>
+                    </tr>
+                    </table>
+
+                </td>
+                <td class="force-col" style="padding-right: 20px;" valign="top">
+
+                    <!-- ### COLUMN 2 ### -->
+                    <table border="0" cellspacing="0" cellpadding="0" width="175" align="left" class="col-3">
+                    <tr>
+                        <td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+                            <img src="http://www.ragingtrifle.com/images/email-chewie.jpg" alt="Image Caption" border="0" hspace="0" vspace="0" style="vertical-align:top; margin-bottom:12px;padding:2px; border: solid 1px #ccc;" class="col-3-img">
+                            <a href="#" style="color:#0088cc; font-weight:bold;">Chewie</a><br>
+                            Trees, trees, millions of trees, massive, immense, running up high; and at their foot, hugging the bank against the stream, crept the little begrimed steamboat, like a sluggish beetle crawling on the floor of a lofty portico. It made you feel very small, very lost, and yet it was not altogether depressing, that feeling.
+                            <br>
+                        </td>
+                    </tr>
+                    </table>
+
+                </td>
+                <td class="force-col"  valign="top">
+
+                    <!-- ### COLUMN 3 ### -->
+                    <table border="0" cellspacing="0" cellpadding="0" width="175" align="right" class="col-3" id="last-col-3">
+                        <tr>
+                            <td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+                                <img src="http://www.ragingtrifle.com/images/email-c3po.jpg" alt="Image Caption" border="0" hspace="0" vspace="0" style="vertical-align:top; margin-bottom:12px;padding:2px; border: solid 1px #ccc;" class="col-3-img">
+                                <a href="#" style="color:#0088cc; font-weight:bold;">C3PO</a><br>
+                                It was upward of thirty days before I saw the mouth of the big river. We anchored off the seat of the government. But my work would not begin till some two hundred miles farther on. So as soon as I could I made a start for a place thirty miles higher up.
+                                <br>
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+              </tr>
+            </table><!--/ end .columns-container-->
+
+        </td>
+    </tr>
+    <tr>
+        <td class="container-padding" bgcolor="#e8e4d9" style="background-color: #e8e4d9; padding-left: 30px; padding-right: 30px; font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif; color: #333;" align="left">
+            <br><br>
+
+            <div style="font-weight: bold; font-size: 18px; line-height: 24px; color: #525252; border-top: 1px solid #999;"><br>How it works</div>
+            <br>
+
+            You should view the source code to see how this works. If you're struggling, here's a bit more documentation
+            <br><br>
+
+            <em>Markup contains:</em>
+            <ul>
+                <li>A container table with 3 columns</li>
+                <li>Wrapper tables with one cell inside each column</li>
+            </ul>
+
+            <em>Manipulating the layout means:</em>
+            <ul>
+                <li>Forcing container columns to (horizontal) blocks</li>
+                <li>Unset paddings and alignment in inner tables</li>
+                <li>Float image to the right</li>
+            </ul>
+
+            <em>Why do you need inner wrapper tables?</em>
+            <ul>
+                <li>The last column needs to float to the right edge, via align="right".</li>
+                <li>Clears floated images in mobile versions.</li>
+            </ul>
+
+            <div style="font-weight: bold; font-size: 18px; line-height: 24px; color: #525252">Tips</div>
+            <br>
+
+            <em>Slightly less than 600px</em><br>
+            Your columns and container table probably will add up <em>slightly less</em> than <span style="font-family: Andale Mono, Courier, monospace; color: #666;">600px</span> to work in Outlook. How much less? Only testing, trial and error, and real content will tell you what that magic number is.
+            <br><br>
+
+
+            <!-- ### END CONTENT ### -->
+            <br><br>
+
+          </td>
+        </tr>
+        
+        <tr>
+      	<td bgcolor="#525252" style="background: #525252; padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom:15px; font-size: 12px; color: #f6f6f6; font-family: Helvetica, sans-serif; text-align: center;">This is the footer.</td>
+      </tr>
+      </table>
+      <!--/600px container -->
+
+    </td>
+  </tr>
+</table>
+<!--/100% wrapper-->
+<br>
+<br>
+</body>
+</html>
