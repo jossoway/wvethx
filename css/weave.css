@@ -501,6 +501,10 @@ margin-left: 0px;
 {
 padding: 0;
 }
+
+.actions {
+	margin-top: 5px;
+}
 		
 .actions li
 {

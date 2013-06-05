@@ -1038,20 +1038,20 @@
 		
 	}
 	
-	#timeline ul li ul li, #latestactivity ul li ul li, #pinned ul li ul li, #received ul li ul li, #sent ul li ul li, #usertimeline ul li ul li, #searchresults ul li ul li, #notifications ul li ul li, #permalink ul li ul li {
+	/* #timeline ul li ul li, #latestactivity ul li ul li, #pinned ul li ul li, #received ul li ul li, #sent ul li ul li, #usertimeline ul li ul li, #searchresults ul li ul li, #notifications ul li ul li, #permalink ul li ul li {
 		display: block;
 		margin-right: 10px;
 		border-bottom: dotted 1px #ccc;
 		padding: 5px 0;
 		}
-		
+		*/
 		
 	#send .categories
 	{
 		margin-left: 0px;
 		}
 		
-			.alert-status-controls	
+		/* 	.alert-status-controls	
 		{
 			float: right;
 			background: #f6f6f6;
@@ -1062,7 +1062,7 @@
 		.alert-status-controls .alert-status-toggle
 		{
 			float: none;
-		}
+		} */
 		
 		.pull-right {
 			float: none;
