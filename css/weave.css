@@ -502,6 +502,18 @@ margin-left: 0px;
 padding: 0;
 }
 
+.alert .actions a.btn-mini.blocked {
+	color: #ac0807;
+}
+
+.alert .actions a.btn-mini.unblock, .alert .actions a.btn-mini.blocked:hover {
+	color: #0088cc;
+}
+
+.alert.alert-blocked .actions a.btn-mini.unblock .icon-ban-circle, .alert.alert-blocked .actions a.btn-mini.blocked:hover .icon-ban-circle {
+	background-image: url("../img/glyphicons-halflings.png");
+}
+
 .actions {
 	margin-top: 5px;
 }
