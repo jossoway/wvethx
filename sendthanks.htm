@@ -2,44 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Weave / Thanks</title>
+    <title>Thnku menu page | Thnku</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    
+    <script type="text/javascript" src="//use.typekit.net/rvk7mrl.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet"> 
+    <!--[if ! lte IE 7]><!-->
+    <!-- /* Stylesheets for browsers other than Internet Explorer 6 */ -->
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/weave.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <!--<![endif]-->
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
+   <!--[if lte IE 7]>
+	    <link rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.1.1.css">
+	<![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="img/ico/favicon.png">
                                                          
                                    
   </head>
 
-  <body class="no-js">
+  <body class="">
   
   <div id="wrap">
 
     <div class="navbar navbar-static-top navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="index.htm">Thnku</a>
-          <div class="">
+
+          <a class="brand" href="index.htm">Thnku. <span>The place for thanks.</span></a>
+          <div class="pull-right">
             <ul class="nav">
               <li class="searchbox"><a href="#" data-toggle="collapse" data-target="#searchbox" class="btn-small"><span class="hidden-phone">Search&nbsp;</span> <i class="icon-search icon-white"></i></a></li>
               <li class="profile"><a href="myuserprofile.htm" class="btn-small"><span class="hidden-phone">Profile&nbsp;</span> <i class="icon-user icon-white"></i></a></li>
-              <li class="profile"><a href="#settings" class="btn-small"><span class="hidden-phone">Settings&nbsp;</span> <i class="icon-cog icon-white"></i></a></li>
+              <li class="profile"><a href="settings.htm" class="btn-small"><span class="hidden-phone">Settings&nbsp;</span> <i class="icon-cog icon-white"></i></a></li>
+              <li class="profile"><a href="front.htm" class="btn-small"><span class="hidden-phone">Home&nbsp;</span> <i class="icon-home icon-white"></i></a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -52,14 +60,20 @@
     	
     		<form class="form-search">
 	    		<input type="text" class="input-medium search-query">
-	    		<button type="submit" class="btn">Search</button>
+	    		<button type="submit" class="btn btn-success">Search</button>
 	    	</form>
     	
     	</div>
     
-    </div>
+    </div><!-- /.container -->
     
     <div class="container">
+    
+    <div class="row">
+    
+    <div class="span8">
+    
+    <div class="alert">Tweeting is disabled. (You may <a href="/settings/social">turn on tweeting</a>.)</div>
       
       <ul id="profiletabs" class="nav nav-tabs">
       	<li class="active"><a class="sendthanks" href="#sendthanks" data-toggle="tab"><span class="hidden-phone">Send Thanks </span>&nbsp;</a></li>
@@ -71,247 +85,444 @@
       
       	<div id="sendthanks" class="tab-pane fade in active">
       
-	      	<form>
-		      	<fieldset>
-			      	<legend>Send thanks using the form below</legend>
-			      	
-			      	<div>
-			      		<label>Username</label>
-			      		<input type="text" placeholder="Type something…" class="input-block-level">
-			      	</div>
-			      	
-			      	<div class="categories accordion" id="categories-accordion">
-			      	
-			      		<div class="">
-				      		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-					      		Categories <i class="icon-chevron-down"></i>
-					      	</a>
-					    </div>
-					    
-					    <div id="collapseOne" class="accordion-body collapse">
-						    <div class="accordion-inner">
-					    
-							    <label for="inspiration" class="checkbox">
-								    <input type="checkbox" value="1" name="categories[]" id="inspiration">
-								    Inspiration
-								</label>
-					    
-								<label for="advice" class="checkbox">
-									<input type="checkbox" value="2" id="advice" name="categories[]">
-									Advice
-								</label>
-					    
-								<label for="funding-money" class="checkbox">
-									<input type="checkbox" value="3" id="funding-money" name="categories[]">
-									Inspiration
-								</label>
-					    
-								<label for="in-kind-support" class="checkbox">
-									<input type="checkbox" value="4" id="in-kind-support" name="categories[]">
-									In-kind support
-								</label>
-					    
-								<label for="an-introduction" class="checkbox">
-									<input type="checkbox" value="5" id="an-introduction" name="categories[]">
-									An introduction
-								</label>
-					    
-								<label for="volunteering" class="checkbox">
-									<input type="checkbox" value="6" id="volunteering" name="categories[]">
-									Volunteering
-								</label>
-					    
-								<label for="promotion" class="checkbox">
-									<input type="checkbox" value="7" id="promotion" name="categories[]">
-									Promotion
-								</label>
-					    
-								<label for="meeting" class="checkbox">
-									<input type="checkbox" value="8" id="meeting" name="categories[]">
-									Meeting
-								</label>
-					    
-								<label for="good-service" class="checkbox">
-									<input type="checkbox" value="9" id="good service" name="categories[]">
-									Good service
-					     	 	</label>
-						    </div>
-					    </div>
-					</div>
-			      	
-			      	<div>
-			      	 	<label for="thankyou">What do you want to say?</label>
-				      	<textarea name="thankyou" rows="5" class="input-block-level"></textarea>
-			      	</div>
 
-				   <button type="submit" class="btn btn-success">Send thanks</button>
-			</fieldset>
-		  </form>
+		  	<div  >
+  
+			  	<form action="&#x2F;thankyou&#x2F;send" method="post" class="form-horizontal">
+				  	<fieldset>
+    
+					  	<div class="control-group">
+						  	<label for="username-input" class="control-label">Thanks to</label>
+
+						  	<div class="controls">
+							  	<input type="text" id="username-input" name="to" placeholder="Type something…">
+        
+							  	<span class="help-block">Can't find the person you want to thank? You could <a href="/thankyou/invite">thank them using their Twitter ID</a>.</span>
+        
+						   </div>
+						   <input id="user-id-input" type="hidden" name="id" value="no-js">
+      
+
+					   </div>
+
+					   <div class="control-group">
+						   <label for="message-input" class="control-label">for</label>
+						   <div class="controls">
+							   <textarea id="message-input" rows="5" name="text" class="input-block-level span4" maxlength="255"></textarea>
+						   </div>
+					   </div>
+    
+					   <div class="categories accordion" id="categories-accordion">		      	
+
+      <div class="">
+	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+	  Categories <i class="icon-chevron-down"></i>
+	</a>
+      </div>
+      <div id="collapseOne" class="accordion-body collapse">
+	<div class="accordion-inner">
+	  
+	  
+	  <label for="inspiration" class="checkbox">
+	    <input type="checkbox" value="1" name="categories[]" id="inspiration">
+	    Inspiration 
+	  </label>
+	  
+	  <label for="advice" class="checkbox">
+	    <input type="checkbox" value="2" name="categories[]" id="advice">
+	    Advice 
+	  </label>
+	  
+	  <label for="funding-money" class="checkbox">
+	    <input type="checkbox" value="3" name="categories[]" id="funding-money">
+	    Funding &#x2F; money 
+	  </label>
+	  
+	  <label for="in-kind-support" class="checkbox">
+	    <input type="checkbox" value="4" name="categories[]" id="in-kind-support">
+	    In-kind support 
+	  </label>
+	  
+	  <label for="an-introduction" class="checkbox">
+	    <input type="checkbox" value="5" name="categories[]" id="an-introduction">
+	    An introduction 
+	  </label>
+	  
+	  <label for="volunteering" class="checkbox">
+	    <input type="checkbox" value="6" name="categories[]" id="volunteering">
+	    Volunteering 
+	  </label>
+	  
+	  <label for="promotion" class="checkbox">
+	    <input type="checkbox" value="7" name="categories[]" id="promotion">
+	    Promotion 
+	  </label>
+	  
+	  <label for="meeting" class="checkbox">
+	    <input type="checkbox" value="8" name="categories[]" id="meeting">
+	    Meeting 
+	  </label>
+	  
+	  <label for="good-service" class="checkbox">
+	    <input type="checkbox" value="9" name="categories[]" id="good-service">
+	    Good service 
+	  </label>
+	  
+        </div>
+      </div>
+    </div>
+
+    <div class="submit">
+      <button type="submit" class="btn btn-success">Send thanks</button>
+    </div>
+  </fieldset>
+</form>
+
+</div>
       	          
 	   </div>
       
 	      <div id="timeline" class="tab-pane fade">
-		      <ul>  	
-	      		<li class="alert alert-neutral public alert-private not-blocked alert-not-blocked">
-	      	
-	      			<div class="alert-status-controls">
-	      				<div class="alert-status-toggle lock"><a href="">Link here</a></div>
-	      				<div class="alert-status-toggle block"><a class="admin-option" href="/thankyou/2/block?tab=notifications">Block this!</a></div>
-	      			</div>
-  
-	      			<a href="/profile/2">Flob A Lob</a> thanked
-	      			<a href="/profile/1">Justin Hellings</a> for
-	      			<span>The regret on our side is, they used to say years ago, we are reading about you in science class. Now they say, we are reading about you in history class.</span>
-  
-  
+		      					<ul>  	
 
-	      			<div class="actions">
-			      	<ul>
-				      	<li><a class="btn-mini" href="">Share this <i class="icon-share-alt icon"></i></a></li>
-				      	<li><a href="/thankyou/6" class="btn-mini">Permalink <i class="icon-bookmark icon"></i></a></li>
-				      	<li><a href="" class="btn-mini">Pin this<i class="icon-star icon"></i></a></li>
-				    </ul>
-				    </div>
-			    </li>
-			    
-			    <li class="alert alert-neutral public alert-public blocked alert-blocked">
-			    
-			    	<div class="alert-status-toggle"><a href="">Link here</a></div>
-			    	
-  
-			    	<a href="/profile/2">Flob A Lob</a> thanked
-			    	<a href="/profile/1">Justin Hellings</a> for
-			    	<span>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</span>
-  
-  
-
-			    	<div class="actions">
-			      	<ul>
-				      	<li><a class="btn-mini" href="">Share this <i class="icon-share-alt icon"></i></a></li>
-				      	<li><a href="/thankyou/6" class="btn-mini">Permalink <i class="icon-bookmark icon"></i></a></li>
-				      	<li><a href="" class="btn-mini">Pin this<i class="icon-star icon"></i></a></li>
-				    </ul>
-				    </div>
-				</li>
+						<li class="alert alert-sent private alert-private not-blocked alert-not-blocked">
+							<a href="/profile/36">Ian Moss</a> thanked <a href="/profile/13">John Ossoway</a> for <span>for dsnin dis site</span> <a href="/category/1">Inspiration</a>
+							<div class="actions">
+								<ul>
+								
+									<li><a href="" class="btn-mini"><i class="icon-share-alt icon"></i>&nbsp;Share&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-bookmark icon"></i>&nbsp;Permalink</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-star icon"></i>&nbsp;Pinned&nbsp;in&nbsp;'Design'</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-globe icon"></i>&nbsp;Public</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-ban-circle icon"></i>&nbsp;Block</a></li>     
+      
+								</ul>
+							</div>
+							20:22 Wednesday 17 April 2013
+						</li>
+						
+						<li class="alert alert-blocked private alert-private">
+							<a href="/profile/36">Ian Moss</a> thanked <a href="/profile/13">John Ossoway</a> for <span>for dsnin dis site</span> <a href="/category/1">Inspiration</a>
+							<div class="actions">
+								<ul>
+								
+									<li><a href="" class="btn-mini"><i class="icon-share-alt icon"></i>&nbsp;Share&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-bookmark icon"></i>&nbsp;Permalink</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-star-empty icon"></i>&nbsp;Pin&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-globe icon"></i>&nbsp;Public</a></li>
+									<li><a href="" class="btn-mini blocked"><i class="icon-ban-circle icon"></i>&nbsp;Blocked</a></li>     
+      
+								</ul>
+							</div>
+							20:22 Wednesday 17 April 2013
+						</li>
+						
+						<li class="alert alert-neutral private alert-private not-blocked alert-not-blocked">
+							<a href="/profile/36">Ian Moss</a> thanked <a href="/profile/13">John Ossoway</a> for <span>for dsnin dis site</span> <a href="/category/1">Inspiration</a>
+							<div class="actions">
+								<ul>
+								
+									<li><a href="" class="btn-mini"><i class="icon-share-alt icon"></i>&nbsp;Share&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-bookmark icon"></i>&nbsp;Permalink</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-star icon"></i>&nbsp;Pinned&nbsp;in&nbsp;'Design'</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-lock icon"></i>&nbsp;Private</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-ban-circle icon"></i>&nbsp;Block</a></li>     
+      
+								</ul>
+							</div>
+							20:22 Wednesday 17 April 2013
+						</li>
+						
+						<li class="alert alert-received private alert-private not-blocked alert-not-blocked">
+							<a href="/profile/36">Ian Moss</a> thanked <a href="/profile/13">John Ossoway</a> for <span>for dsnin dis site</span> <a href="/category/1">Inspiration</a>
+							<div class="actions">
+								<ul>
+								
+									<li><a href="" class="btn-mini"><i class="icon-share-alt icon"></i>&nbsp;Share&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-bookmark icon"></i>&nbsp;Permalink</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-star icon"></i>&nbsp;Pinned&nbsp;in&nbsp;'Design'</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-globe icon"></i>&nbsp;Public</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-ban-circle icon"></i>&nbsp;Block</a></li>     
+      
+								</ul>
+							</div>
+							20:22 Wednesday 17 April 2013
+						</li>
+						
+						<li class="alert alert-neutral private alert-private not-blocked alert-not-blocked">
+							<a href="/profile/36">Ian Moss</a> thanked <a href="/profile/13">John Ossoway</a> for <span>for dsnin dis site</span> <a href="/category/1">Inspiration</a>
+							<div class="actions">
+								<ul>
+								
+									<li><a href="" class="btn-mini"><i class="icon-share-alt icon"></i>&nbsp;Share&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-bookmark icon"></i>&nbsp;Permalink</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-star icon"></i>&nbsp;Pinned&nbsp;in&nbsp;'Design'</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-lock icon"></i>&nbsp;Private</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-ban-circle icon"></i>&nbsp;Block</a></li>     
+      
+								</ul>
+							</div>
+							20:22 Wednesday 17 April 2013
+						</li>
+						
+						<li class="alert alert-neutral private alert-private not-blocked alert-not-blocked">
+							<a href="/profile/36">Ian Moss</a> thanked <a href="/profile/13">John Ossoway</a> for <span>for dsnin dis site</span> <a href="/category/1">Inspiration</a>
+							<div class="actions">
+								<ul>
+								
+									<li><a href="" class="btn-mini"><i class="icon-share-alt icon"></i>&nbsp;Share&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-bookmark icon"></i>&nbsp;Permalink</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-star icon"></i>&nbsp;Pinned&nbsp;in&nbsp;'Design'</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-lock icon"></i>&nbsp;Private</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-ban-circle icon"></i>&nbsp;Block</a></li>     
+      
+								</ul>
+							</div>
+							20:22 Wednesday 17 April 2013
+						</li>
+						
+						<li class="alert alert-neutral private alert-private not-blocked alert-not-blocked">
+							<a href="/profile/36">Ian Moss</a> thanked <a href="/profile/13">John Ossoway</a> for <span>for dsnin dis site</span> <a href="/category/1">Inspiration</a>
+							<div class="actions">
+								<ul>
+								
+									<li><a href="" class="btn-mini"><i class="icon-share-alt icon"></i>&nbsp;Share&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-bookmark icon"></i>&nbsp;Permalink</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-star icon"></i>&nbsp;Pinned&nbsp;in&nbsp;'Design'</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-lock icon"></i>&nbsp;Private</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-ban-circle icon"></i>&nbsp;Block</a></li>     
+      
+								</ul>
+							</div>
+							20:22 Wednesday 17 April 2013
+						</li>
+						
+						<li class="alert alert-neutral private alert-private not-blocked alert-not-blocked">
+							<a href="/profile/36">Ian Moss</a> thanked <a href="/profile/13">John Ossoway</a> for <span>for dsnin dis site</span> <a href="/category/1">Inspiration</a>
+							<div class="actions">
+								<ul>
+								
+									<li><a href="" class="btn-mini"><i class="icon-share-alt icon"></i>&nbsp;Share&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-bookmark icon"></i>&nbsp;Permalink</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-star icon"></i>&nbsp;Pinned&nbsp;in&nbsp;'Design'</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-lock icon"></i>&nbsp;Private</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-ban-circle icon"></i>&nbsp;Block</a></li>     
+      
+								</ul>
+							</div>
+							20:22 Wednesday 17 April 2013
+						</li>
 				
-			    <li class="alert alert-neutral public alert-public not-blocked alert-not-blocked">
-			    
-			    	<div class="alert-status-toggle"><a href="">Link here</a></div>
-  
-			    	<a href="/profile/2">Flob A Lob</a> thanked
-			    	<a href="/profile/1">Justin Hellings</a> for
-			    	<span>ejkghiejb</span>
-  
-  
-
-			    	<div class="actions">
-			      	<ul>
-				      	<li><a class="btn-mini" href="">Share this <i class="icon-share-alt icon"></i></a></li>
-				      	<li><a href="/thankyou/6" class="btn-mini">Permalink <i class="icon-bookmark icon"></i></a></li>
-				      	<li><a href="" class="btn-mini">Pin this<i class="icon-star icon"></i></a></li>
-				    </ul>
-				    </div>
-				</li>
-
-
-      	
-      	</ul>
+					</ul>
       	    
       	    
 	      </div>
 	      
 	      <div id="notifications" class="tab-pane fade">
 		      
-		      <ul>  	
-	      		<li class="alert alert-new alert-received public alert-private not-blocked alert-not-blocked">
-	      	
-	      			<div class="alert-status-toggle"><a href="">Link here</a></div>
-  
-	      			<a href="/profile/2">Flob A Lob</a> thanked
-	      			<a href="/profile/1">Justin Hellings</a> for
-	      			<span>ejkghiejb</span>
-	      			<div class="alert-meta">
-	      				<ul>
-	      					<li>Posted: 13:57 Thursday 31 January 2013 <i class="icon-time icon"></i></li>
-	      					<li>Pinned: <a href="">Category 1</a>, <a href="">Category 2</a> <i class="icon-star icon"></i></li>
-	      				</ul>
-	      			</div>
-  
-  
+		      					<ul>  	
 
-	      			<div class="actions">
-			      	<ul>
-				      	<li><a class="btn-mini" href="">Share this <i class="icon-share-alt icon"></i></a></li>
-				      	<li><a href="/thankyou/6" class="btn-mini">Permalink <i class="icon-bookmark icon"></i></a></li>
-				      	<li><a href="" class="btn-mini">Pin this<i class="icon-star icon"></i></a></li>
-				    </ul>
-				    </div>
-			    </li>
-			    
-			    <li class="alert alert-neutral public alert-public blocked alert-blocked">
-			    
-			    	<div class="alert-status-toggle"><a href="">Link here</a></div>
-  
-			    	<a href="/profile/2">Flob A Lob</a> thanked
-			    	<a href="/profile/1">Justin Hellings</a> for
-			    	<span>ejkghiejb</span>
-			    	<div class="alert-meta">
-	      				<ul>
-	      					<li>Posted: 13:57 Thursday 31 January 2013 <i class="icon-time icon"></i></li>
-	      					<li>Pinned: <a href="">Category 1</a>, <a href="">Category 2</a> <i class="icon-star icon"></i></li>
-	      				</ul>
-	      			</div>
-  
-  
-
-			    	<div class="actions">
-			      	<ul>
-				      	<li><a class="btn-mini" href="">Share this <i class="icon-share-alt icon"></i></a></li>
-				      	<li><a href="/thankyou/6" class="btn-mini">Permalink <i class="icon-bookmark icon"></i></a></li>
-				      	<li><a href="" class="btn-mini">Pin this<i class="icon-star icon"></i></a></li>
-				    </ul>
-				    </div>
-				</li>
+						<li class="alert alert-sent private alert-private not-blocked alert-not-blocked">
+							<a href="/profile/36">Ian Moss</a> thanked <a href="/profile/13">John Ossoway</a> for <span>for dsnin dis site</span> <a href="/category/1">Inspiration</a>
+							<div class="actions">
+								<ul>
+								
+									<li><a href="" class="btn-mini"><i class="icon-share-alt icon"></i>&nbsp;Share&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-bookmark icon"></i>&nbsp;Permalink</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-star icon"></i>&nbsp;Pinned&nbsp;in&nbsp;'Design'</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-globe icon"></i>&nbsp;Public</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-ban-circle icon"></i>&nbsp;Block</a></li>     
+      
+								</ul>
+							</div>
+							20:22 Wednesday 17 April 2013
+						</li>
+						
+						<li class="alert alert-blocked private alert-private">
+							<a href="/profile/36">Ian Moss</a> thanked <a href="/profile/13">John Ossoway</a> for <span>for dsnin dis site</span> <a href="/category/1">Inspiration</a>
+							<div class="actions">
+								<ul>
+								
+									<li><a href="" class="btn-mini"><i class="icon-share-alt icon"></i>&nbsp;Share&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-bookmark icon"></i>&nbsp;Permalink</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-star-empty icon"></i>&nbsp;Pin&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-globe icon"></i>&nbsp;Public</a></li>
+									<li><a href="" class="btn-mini blocked"><i class="icon-ban-circle icon"></i>&nbsp;Blocked</a></li>     
+      
+								</ul>
+							</div>
+							20:22 Wednesday 17 April 2013
+						</li>
+						
+						<li class="alert alert-neutral private alert-private not-blocked alert-not-blocked">
+							<a href="/profile/36">Ian Moss</a> thanked <a href="/profile/13">John Ossoway</a> for <span>for dsnin dis site</span> <a href="/category/1">Inspiration</a>
+							<div class="actions">
+								<ul>
+								
+									<li><a href="" class="btn-mini"><i class="icon-share-alt icon"></i>&nbsp;Share&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-bookmark icon"></i>&nbsp;Permalink</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-star icon"></i>&nbsp;Pinned&nbsp;in&nbsp;'Design'</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-lock icon"></i>&nbsp;Private</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-ban-circle icon"></i>&nbsp;Block</a></li>     
+      
+								</ul>
+							</div>
+							20:22 Wednesday 17 April 2013
+						</li>
+						
+						<li class="alert alert-received private alert-private not-blocked alert-not-blocked">
+							<a href="/profile/36">Ian Moss</a> thanked <a href="/profile/13">John Ossoway</a> for <span>for dsnin dis site</span> <a href="/category/1">Inspiration</a>
+							<div class="actions">
+								<ul>
+								
+									<li><a href="" class="btn-mini"><i class="icon-share-alt icon"></i>&nbsp;Share&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-bookmark icon"></i>&nbsp;Permalink</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-star icon"></i>&nbsp;Pinned&nbsp;in&nbsp;'Design'</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-globe icon"></i>&nbsp;Public</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-ban-circle icon"></i>&nbsp;Block</a></li>     
+      
+								</ul>
+							</div>
+							20:22 Wednesday 17 April 2013
+						</li>
+						
+						<li class="alert alert-neutral private alert-private not-blocked alert-not-blocked">
+							<a href="/profile/36">Ian Moss</a> thanked <a href="/profile/13">John Ossoway</a> for <span>for dsnin dis site</span> <a href="/category/1">Inspiration</a>
+							<div class="actions">
+								<ul>
+								
+									<li><a href="" class="btn-mini"><i class="icon-share-alt icon"></i>&nbsp;Share&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-bookmark icon"></i>&nbsp;Permalink</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-star icon"></i>&nbsp;Pinned&nbsp;in&nbsp;'Design'</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-lock icon"></i>&nbsp;Private</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-ban-circle icon"></i>&nbsp;Block</a></li>     
+      
+								</ul>
+							</div>
+							20:22 Wednesday 17 April 2013
+						</li>
+						
+						<li class="alert alert-neutral private alert-private not-blocked alert-not-blocked">
+							<a href="/profile/36">Ian Moss</a> thanked <a href="/profile/13">John Ossoway</a> for <span>for dsnin dis site</span> <a href="/category/1">Inspiration</a>
+							<div class="actions">
+								<ul>
+								
+									<li><a href="" class="btn-mini"><i class="icon-share-alt icon"></i>&nbsp;Share&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-bookmark icon"></i>&nbsp;Permalink</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-star icon"></i>&nbsp;Pinned&nbsp;in&nbsp;'Design'</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-lock icon"></i>&nbsp;Private</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-ban-circle icon"></i>&nbsp;Block</a></li>     
+      
+								</ul>
+							</div>
+							20:22 Wednesday 17 April 2013
+						</li>
+						
+						<li class="alert alert-neutral private alert-private not-blocked alert-not-blocked">
+							<a href="/profile/36">Ian Moss</a> thanked <a href="/profile/13">John Ossoway</a> for <span>for dsnin dis site</span> <a href="/category/1">Inspiration</a>
+							<div class="actions">
+								<ul>
+								
+									<li><a href="" class="btn-mini"><i class="icon-share-alt icon"></i>&nbsp;Share&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-bookmark icon"></i>&nbsp;Permalink</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-star icon"></i>&nbsp;Pinned&nbsp;in&nbsp;'Design'</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-lock icon"></i>&nbsp;Private</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-ban-circle icon"></i>&nbsp;Block</a></li>     
+      
+								</ul>
+							</div>
+							20:22 Wednesday 17 April 2013
+						</li>
+						
+						<li class="alert alert-neutral private alert-private not-blocked alert-not-blocked">
+							<a href="/profile/36">Ian Moss</a> thanked <a href="/profile/13">John Ossoway</a> for <span>for dsnin dis site</span> <a href="/category/1">Inspiration</a>
+							<div class="actions">
+								<ul>
+								
+									<li><a href="" class="btn-mini"><i class="icon-share-alt icon"></i>&nbsp;Share&nbsp;this</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-bookmark icon"></i>&nbsp;Permalink</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-star icon"></i>&nbsp;Pinned&nbsp;in&nbsp;'Design'</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-lock icon"></i>&nbsp;Private</a></li>
+									<li><a href="" class="btn-mini"><i class="icon-ban-circle icon"></i>&nbsp;Block</a></li>     
+      
+								</ul>
+							</div>
+							20:22 Wednesday 17 April 2013
+						</li>
 				
-			    <li class="alert alert-neutral public alert-public not-blocked alert-not-blocked">
-			    
-			    	<div class="alert-status-toggle"><a href="">Link here</a></div>
-  
-			    	<a href="/profile/2">Flob A Lob</a> thanked
-			    	<a href="/profile/1">Justin Hellings</a> for
-			    	<span>ejkghiejb</span>
-			    	<div class="alert-meta">
-	      				<ul>
-	      					<li>Posted: 13:57 Thursday 31 January 2013 <i class="icon-time icon"></i></li>
-	      					<li>Pinned: <a href="">Category 1</a>, <a href="">Category 2</a> <i class="icon-star icon"></i></li>
-	      				</ul>
-	      			</div>
-  
-  
-
-			    	<div class="actions">
-			      	<ul>
-				      	<li><a class="btn-mini" href="">Share this <i class="icon-share-alt icon"></i></a></li>
-				      	<li><a href="/thankyou/6" class="btn-mini">Permalink <i class="icon-bookmark icon"></i></a></li>
-				      	<li><a href="" class="btn-mini">Pin this<i class="icon-star icon"></i></a></li>
-				    </ul>
-				    </div>
-				</li>
-
-
-      	
-      	</ul>
+					</ul>
       	    
       	    
 	      </div>
       
       </div>
+      
+    </div><!-- /span8 -->
+    
+    <div class="span4">
+    	<div id="connections">
+    		<h2>Your connections</h2>
+    		<p>See what people you know on Thnku have been up to:</p>
+    		
+    		<ul>
+    			<li class="alert alert-neutral private alert-private not-blocked alert-not-blocked">
+
+    					<a href=""><img src="img/avatar-leia.jpg" alt="Connection: Princess Leia" /></a>
+    					<h4><a href="">Princess Leia Organa</a></h4>
+						<span class="bold">Latest:</span> Princess Leia thanked <a href="">Han Solo</a> for <span>being a scoundrel</span>.
+						<span class="date muted">20:22 Wednesday 17 April 2013</span>
+
+    			</li>
+    			
+    			<li class="alert alert-neutral private alert-private not-blocked alert-not-blocked">
+
+    					<a href=""><img src="img/avatar-chewie.jpg" alt="Connection: Chewbacca" /></a>
+    					<h4><a href="">Chewbacca</a></h4>
+						<span class="bold">Latest:</span> Chewbacca thanked <a href="">Han Solo</a> for <span>the lovely walk on Endor</span>.
+						<span class="date muted">20:22 Wednesday 17 April 2013</span>
+
+    			</li>
+    			
+    			<li class="alert alert-neutral private alert-private not-blocked alert-not-blocked">
+
+    					<a href=""><img src="img/avatar-c3po.jpg" alt="Connection: C3PO" /></a>
+    					<h4><a href="">C3PO</a></h4>
+						<span class="bold">Latest:</span> C3PO thanked <a href="">R2D2</a> for <span>being a great party host</span>.
+						<span class="date muted">20:22 Wednesday 17 April 2013</span>
+
+    			</li>
+    		
+    		</ul>
+    
+    	</div>
+    
+    </div>
+      
+    </div><!-- /row -->
 
     </div> <!-- /container -->
     
-        <div id="footer">
+    <div id="footer">
       <div class="container">
-        <p class="muted credit">hello this is the footer</p>
+      <div class="row">
+      	<div class="span4">
+      		<ul>
+      			<li class="muted"><a href="">Thnku uses cookies</a></li>
+	  			<li class="muted"><a href="">Accessibility</a></li>
+	  			<li class="muted"><a href="">About Thnku</a></li>
+	  		</ul>
+      	</div>
+      	
+      	<div class="span4 offset4 social">
+      	
+      	
+      		<a href=""><img src="img/icon-googleplus.png" alt="Logo: Google Plus" /></a>
+      		<a href=""><img src="img/icon-twitter.png" alt="Logo: Google Plus" /></a>
+      		<a href=""><img src="img/icon-facebook.png" alt="Logo: Google Plus" /></a>
+      	
+        </div>
+      	
+      </div>
       </div>
     </div>
     
@@ -321,11 +532,14 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    
-    <script> jQuery("body").removeClass("no-js"); </script>
-    
     <script src="js/bootstrap.js"></script>
-
+    <script src="js/jquery.fitvids.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Target your .container, .wrapper, .post, etc.
+			$(".videobox").fitVids();
+			});
+	</script>
 
   </body>
 </html>

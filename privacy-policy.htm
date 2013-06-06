@@ -2,44 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Weave / Thanks</title>
+    <title>Privacy Policy | Thnku</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    
+    <script type="text/javascript" src="//use.typekit.net/rvk7mrl.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <!-- Le styles -->
+    <!--[if ! lte IE 7]><!-->
+    <!-- /* Stylesheets for browsers other than Internet Explorer 6 */ -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/weave.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <!--<![endif]-->
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
+   <!--[if lte IE 7]>
+	    <link rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.1.1.css">
+	<![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="img/ico/favicon.png">
                                                          
                                    
   </head>
 
-  <body>
+  <body class="">
   
   <div id="wrap">
 
     <div class="navbar navbar-static-top navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="index.htm">Thnku</a>
-          <div class="">
+
+          <a class="brand" href="index.htm">Thnku. <span>The place for thanks.</span></a>
+          <div class="pull-right">
             <ul class="nav">
               <li class="searchbox"><a href="#" data-toggle="collapse" data-target="#searchbox" class="btn-small"><span class="hidden-phone">Search&nbsp;</span> <i class="icon-search icon-white"></i></a></li>
               <li class="profile"><a href="myuserprofile.htm" class="btn-small"><span class="hidden-phone">Profile&nbsp;</span> <i class="icon-user icon-white"></i></a></li>
-              <li class="profile"><a href="#settings" class="btn-small"><span class="hidden-phone">Settings&nbsp;</span> <i class="icon-cog icon-white"></i></a></li>
+              <li class="profile"><a href="settings.htm" class="btn-small"><span class="hidden-phone">Settings&nbsp;</span> <i class="icon-cog icon-white"></i></a></li>
+              <li class="profile"><a href="front.htm" class="btn-small"><span class="hidden-phone">Home&nbsp;</span> <i class="icon-home icon-white"></i></a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -52,19 +60,18 @@
     	
     		<form class="form-search">
 	    		<input type="text" class="input-medium search-query">
-	    		<button type="submit" class="btn">Search</button>
+	    		<button type="submit" class="btn btn-success">Search</button>
 	    	</form>
     	
     	</div>
     
-    </div>
+    </div><!-- /.container -->
     
     <div class="container">
     
        <h1>The Weave Privacy Policy</h1>
        
        <div class="alert">
-	       <button type="button" class="close" data-dismiss="alert">&times;</button>
 	       <strong>Warning!</strong> make sure you read all the options below carefully before continuing.
 	   </div>
        
@@ -101,9 +108,26 @@
 
     </div> <!-- /container -->
     
-        <div id="footer">
+    <div id="footer">
       <div class="container">
-        <p class="muted credit">hello this is the footer</p>
+      <div class="row">
+      	<div class="span4">
+      		<ul>
+      			<li class="muted"><a href="">Thnku uses cookies</a></li>
+	  			<li class="muted"><a href="">Accessibility</a></li>
+	  			<li class="muted"><a href="">About Thnku</a></li>
+	  		</ul>
+      	</div>
+      	
+      	<div class="span4 offset4 social">
+      	
+      	
+      		<a href=""><img src="img/icon-googleplus.png" alt="Logo: Google Plus" /></a>
+      		<a href=""><img src="img/icon-twitter.png" alt="Logo: Google Plus" /></a>
+      		<a href=""><img src="img/icon-facebook.png" alt="Logo: Google Plus" /></a>
+      	
+        </div>
+      </div>
       </div>
     </div>
     
@@ -114,7 +138,13 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
-
+    <script src="js/jquery.fitvids.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Target your .container, .wrapper, .post, etc.
+			$(".videobox").fitVids();
+			});
+	</script>
 
   </body>
 </html>

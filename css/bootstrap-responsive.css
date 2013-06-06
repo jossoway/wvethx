@@ -943,6 +943,10 @@
   #what-is-weave .quote p:first-child {
 	  padding-left: 0px;
 	  }
+	  
+	  #connections {
+		margin-top: 0;
+	}
   
 }
 
@@ -999,7 +1003,7 @@
 
   .nav-tabs > li.active > a.sendthanks, .nav-tabs > li > a.sendthanks:hover
   {
-	  background: #efebe3 url('../img/icon-edit.png') no-repeat center 10px; 
+	  background: #f5f0e7 url('../img/icon-edit.png') no-repeat center 10px; 
 	  display: inline-block;
 	  }
 
@@ -1011,7 +1015,7 @@
 
 	.nav-tabs > li.active > a.timeline, .nav-tabs > li > a.timeline:hover
 	{
-		background: #efebe3 url('../img/icon-list.png') no-repeat center 10px; 
+		background: #f5f0e7 url('../img/icon-list.png') no-repeat center 10px; 
 		display: inline-block;
 	}
 
@@ -1046,27 +1050,18 @@
 		}
 		*/
 		
-	#send .categories
+	#sendthanks .categories
 	{
 		margin-left: 0px;
 		}
-		
-		/* 	.alert-status-controls	
-		{
-			float: right;
-			background: #f6f6f6;
-			padding: 5px;
-			border: dotted 1px #ccc;	
-		}
-		
-		.alert-status-controls .alert-status-toggle
-		{
+
+	.pull-right {
 			float: none;
-		} */
-		
-		.pull-right {
-			float: none;
-			}
+	}
+	
+	#connections {
+		margin-top: 0;
+	}
 }
 
 @media (max-width: 979px) {
@@ -1215,6 +1210,12 @@
     padding-right: 10px;
     padding-left: 10px;
   }
+  
+  #connections h2 {
+	  font-size: 20px;
+  }
+  
+  
 }
 
 @media (min-width: 980px) {

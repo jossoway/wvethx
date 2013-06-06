@@ -107,6 +107,18 @@ font-weight: 500;
 		  padding: 5px 0;
 		  font-size: 12px;
 		 }
+		 
+	#footer .social {
+		text-align: right;
+	}
+	
+	#footer .social a img {
+		opacity: 0.8;
+	}
+	
+	#footer .social a:hover img {
+		opacity: 1.0;
+	}
 
       /* Lastly, apply responsive CSS fixes as necessary */
       @media (max-width: 767px) {
@@ -174,11 +186,6 @@ margin-top: 1px;
    
 
 /* Tab UI styles */
-
-#signinsignuptab li
-{
-width: 50%;
-}
  
 #timeline ul, #latestactivity ul, #pinned ul, #received ul, #sent ul, #usertimeline ul, #notifications ul, #permalink ul, #searchresults ul, #categoryresults ul
 {
@@ -223,6 +230,13 @@ ul#profiletabs.nav
 margin-bottom: 0px !important;
 }
 
+.nav-tabs > li a.notifications {
+}
+
+.nav-tabs > li a.notifications span.hidden-phone {
+	margin-left: 3px;
+}
+
 .nav-tabs > li a.notifications span.badge
 {
 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -236,28 +250,28 @@ display: inline-block;
 
 .nav-tabs > li.active > a.sendthanks, .nav-tabs > li > a.sendthanks:hover
 {
-background: #f5f0e7 url('../img/icon-edit.png') no-repeat 10px 7px; 
+background: #f5f0e7 url('../img/icon-edit.png') no-repeat 12px 10px; 
 padding-left: 40px;
 display: inline-block;
 }
 
 .nav-tabs > li > a.sendthanks
 {
-background: url('../img/icon-edit.png') no-repeat 10px 7px;
+background: url('../img/icon-edit.png') no-repeat 12px 10px;
 padding-left: 40px;
 display: inline-block;
 }
 
 .nav-tabs > li.active > a.timeline, .nav-tabs > li > a.timeline:hover
 {
-background: #f5f0e7 url('../img/icon-list.png') no-repeat 10px 7px; 
+background: #f5f0e7 url('../img/icon-list.png') no-repeat 12px 10px; 
 padding-left: 44px;
 display: inline-block;
 }
 
 .nav-tabs > li > a.timeline
 {
-background: url('../img/icon-list.png') no-repeat 10px 7px;
+background: url('../img/icon-list.png') no-repeat 12px 10px;
 padding-left: 44px;
 display: inline-block;
 }
@@ -334,8 +348,28 @@ font-weight: bold;
 #profilesettings .form-horizontal .control-group label
 {
 text-align: left;
+font-weight: bold;
 }
 
+#sendthanks .form-horizontal .control-group label
+{
+font-weight: bold;
+text-align: left;
+}
+
+#sendthanks .form-horizontal .control-group
+{
+background: #f6f6f6;
+padding: 10px;
+}
+
+
+#sendthanks .form-horizontal .control-group .help-block
+{
+color: #696969;
+}
+
+/*
 #signin, #signup
 {
 padding-top: 20px;
@@ -350,6 +384,7 @@ width: 100px;
 {
 margin-left: 120px;
 }
+*/
 
 #profilesettings .form-horizontal .control-group
 {
@@ -371,6 +406,17 @@ margin-bottom: 20px;
 border-bottom: dotted 1px #ececec;
 padding-bottom: 10px;
 }
+
+/* Send thanks page styles */
+
+
+.submit {
+/* margin-left: 100px; */
+margin-top: 10px;
+border-top: dotted 1px #999;
+padding-top: 15px;
+}
+
 
 /* ALERT STYLES
 thanks sent/received/neutral 
@@ -394,9 +440,14 @@ Error: Red
 }
 
 .alert-sent, .alert-received, .alert-neutral, .alert-blocked {
+	font-size: 14px;
+	line-height: 16px;
+	color: #545454;
+}
+
+.front .alert-sent, .front .alert-received, .front .alert-neutral, .front .alert-blocked {
 	font-size: 12px;
 	line-height: 14px;
-	color: #545454;
 }
 
 #tabcontent .alert {
@@ -542,7 +593,13 @@ padding: 0;
 list-style-type: none;
 }
 
-/* Sign in / sign up desktop styles */
+ul#userprofiletabs.nav, ul#settingstabs.nav
+{
+margin-bottom: 0 !important;
+}
+
+
+/* Sign in / sign up desktop styles 
 
 ul#signinsignuptab.side-by-side
 {
@@ -593,11 +650,11 @@ padding-left: 0px;
 float: left;
 width: 40%;
 }
-
+*/
 #tabcontent
 {
 background: #f5f0e7;
-padding: 10px;
+padding: 20px 10px;
 border-right: 1px solid #dad7c1;
 border-left: 1px solid #dad7c1;
 border-bottom: 1px solid #dad7c1;
@@ -667,7 +724,13 @@ height: auto;
 .categories
 {
 margin-bottom: 20px;
-margin-left: 100px;
+background: #f6f6f6;
+padding: 10px;
+/* margin-left: 100px; */
+}
+
+.categories .accordion-toggle {
+	font-weight: bold;
 }
 
 .categories label
@@ -823,5 +886,60 @@ a.signin-signup-box:hover {
 	margin-bottom: 20px;
 }
 
+
+/* Connections */
+
+#connections {
+margin-top: 100px;
+background: #f5f0e7;
+padding: 0px 10px 20px 10px;
+border-right: 1px solid #dad7c1;
+border-left: 1px solid #dad7c1;
+border-bottom: 1px solid #dad7c1;
+}
+
+#connections h2 {
+	background: url('../img/icon-connections.png') no-repeat 0px 9px;
+	padding: 0 0 0 40px;
+}
+
+#connections ul {
+	margin: 0;
+}
+
+#connections ul li {
+	padding: 5px 0;
+	border-bottom: dotted 1px #ccc;
+	margin-bottom: 5px;
+	list-style-type: none;
+}
+
+#connections h4 {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+
+}
+
+#connections img {
+	float: left;
+	margin: 0 5px 0 5px;
+	padding: 2px;
+	border: solid 1px #ccc;
+	opacity: 0.9;
+}
+
+#connections a:hover img {
+	opacity: 1.0;
+}
+
+#connections .bold {
+	font-weight: bold;
+}
+
+#connections .date {
+	display: block;
+	font-size: 10px;
+}
 
 
